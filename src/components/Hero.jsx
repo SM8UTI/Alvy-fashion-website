@@ -7,7 +7,9 @@ const Hero = () => {
     <section className="hero">
       <div className="container">
         <div className="text">
-          <h1>Fashion <br/>& Branding</h1>
+          <h1>
+            Fashion <br />& Branding
+          </h1>
           <div className="text-desc">
             <p>
               Bringing Your Fashion Brand's Unique Identity to Life Through

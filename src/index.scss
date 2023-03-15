@@ -21,6 +21,11 @@
 
 html {
   font-size: 62.5%;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 body {
@@ -33,6 +38,7 @@ p {
   font-family: "Roboto Mono", monospace;
   font-size: 0.9rem;
   line-height: 1.7;
+  color: #9e9d9a;
 }
 
 a {
@@ -128,21 +134,20 @@ button {
   }
 }
 
-@media (max-width:999px) {
-  html{
+@media (max-width: 999px) {
+  html {
     font-size: 56.6%;
   }
 }
 
-
-@media (max-width:768px) {
-  html{
+@media (max-width: 768px) {
+  html {
     font-size: 53.6%;
   }
 }
 
-@media (max-width:610px) {
-  html{
+@media (max-width: 610px) {
+  html {
     font-size: 46.6%;
   }
 }
