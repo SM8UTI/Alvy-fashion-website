@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:wght@400;500;600;700;800&family=Roboto+Mono:wght@300;400;500;600&display=swap");
+
+:root {
+  --bgp: #ffe14b;
+  --bgw: #fff;
+  --bgb: #121212;
+  --bgsb: #1e1e1e;
+  --border: #ffffff26;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bgb);
+  color: var(--bgw);
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Roboto Mono", monospace !important;
+}
+
+.btn-p {
+  font-size: 1.6rem;
+  background-color: var(--bgp);
+  color: var(--bgsb);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 0.4rem;
+  transition: all 0.4s ease-in-out;
+
+  &-big {
+    font-size: 1.8rem;
+  }
+
+  &:hover {
+    opacity: 90%;
+  }
+}
+
+.CircleIco {
+  background-color: #9797973d;
+  backdrop-filter: blur(5px);
+
+  border-radius: 50%;
+  overflow: hidden;
+  width: 40px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 3px solid var(--border);
+
+  svg {
+    margin-top: 6px;
+    width: 30px;
+    fill: var(--bgw);
+    transition: all 0.2s ease-in-out;
+
+    &:first-child {
+      translate: -38px 0;
+    }
+  }
+}
+
+.btn-s {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  gap: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  &-90 {
+    .CircleIco {
+      rotate: 90deg;
+    }
+  }
+  &-45 {
+    .CircleIco {
+      rotate: -45deg;
+    }
+  }
+
+  &:hover {
+    .CircleIco {
+      svg {
+        &:first-child {
+          translate: 2px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:999px) {
+  html{
+    font-size: 56.6%;
+  }
+}
+
+
+@media (max-width:768px) {
+  html{
+    font-size: 53.6%;
+  }
+}
+
+@media (max-width:610px) {
+  html{
+    font-size: 46.6%;
+  }
+}
