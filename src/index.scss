@@ -83,12 +83,12 @@ button {
 
   border-radius: 50%;
   overflow: hidden;
-  width: 40px;
+  width: 39px;
   aspect-ratio: 1;
   display: flex;
   align-items: center;
   gap: 1rem;
-  border: 3px solid var(--border);
+  border: 1px solid var(--border);
 
   svg {
     margin-top: 6px;
