@@ -64,6 +64,12 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
+      &-details {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
     }
   }
 }
@@ -77,12 +83,17 @@
       gap: 2rem;
       .item {
         display: flex;
+        cursor: pointer;
         align-items: center;
         justify-content: space-between;
         gap: 2rem;
         background-color: var(--bgsb);
         padding: 2rem;
         border-radius: 1rem;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          background-color: #9e9e9e3a;
+        }
         .text-2 {
           width: 85%;
           h3 {
@@ -99,10 +110,19 @@
     .col-2 {
       border-radius: 1rem;
       overflow: hidden;
+      cursor: pointer;
 
       img {
         transition: all 0.4s ease-in-out;
         object-fit: cover;
+        scale: 1;
+        transition: scale 0.6s ease-in-out;
+      }
+
+      &:hover {
+        img {
+          scale: 1.09;
+        }
       }
     }
   }

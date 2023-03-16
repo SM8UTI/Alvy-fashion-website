@@ -54,7 +54,11 @@ const About = () => {
       <div className="container container-2">
         <div className="col-1">
           {data.map((elem, index) => (
-            <div className="item" onClick={() => setIndex(index)}>
+            <div
+              className="item"
+              key={index}
+              onMouseMove={() => setIndex(index)}
+            >
               <div className="text-2">
                 <h3>{elem.text}</h3>
                 <p>{elem.desc.slice(0, 180)}</p>
