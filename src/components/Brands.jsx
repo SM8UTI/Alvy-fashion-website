@@ -45,7 +45,7 @@ const Brands = () => {
               <h1>{elem.text}</h1>
               <div className="lower-text-btns">
                 <SecondaryBtn text="Discover project" classText={"btn-s-45"} />
-                <span>{elem.tag}</span>
+                <span className="brandTag">{elem.tag}</span>
               </div>
             </div>
           </div>

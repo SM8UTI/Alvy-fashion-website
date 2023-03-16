@@ -32,12 +32,13 @@
 
       .text {
         min-height: 400px;
+        padding: 2rem !important;
       }
     }
 
     @media (max-width: 400px) {
       .text {
-        padding: 1.5rem !important;
+        padding: 2rem !important;
       }
     }
 

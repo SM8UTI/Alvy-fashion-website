@@ -62,6 +62,18 @@
   }
 }
 
+.brandTag {
+  background-color: #ffffff31;
+  backdrop-filter: blur(6px);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  font-weight: 400;
+  font-family: "Roboto Mono", monospace;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+}
+
 .main-text {
   margin-top: 4rem;
   margin-bottom: 4rem;
