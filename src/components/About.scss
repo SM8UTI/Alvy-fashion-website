@@ -1,6 +1,9 @@
 .About {
   padding: 1rem;
   margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 
   img {
     width: 100%;
@@ -20,6 +23,10 @@
       grid-template-columns: 1fr;
 
       .image {
+        height: 400px !important;
+      }
+
+      .col-2 {
         height: 400px !important;
       }
 
@@ -57,6 +64,46 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+    }
+  }
+}
+
+.About {
+  .container-2 {
+    gap: 2rem;
+    .col-1 {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        background-color: var(--bgsb);
+        padding: 2rem;
+        border-radius: 1rem;
+        .text-2 {
+          width: 85%;
+          h3 {
+            margin-bottom: 1rem;
+          }
+        }
+
+        .CircleIco {
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .col-2 {
+      border-radius: 1rem;
+      overflow: hidden;
+
+      img {
+        transition: all 0.4s ease-in-out;
+        object-fit: cover;
+      }
     }
   }
 }
