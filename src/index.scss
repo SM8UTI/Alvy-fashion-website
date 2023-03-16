@@ -36,13 +36,22 @@ body {
 
 p {
   font-family: "Roboto Mono", monospace;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   line-height: 1.7;
   color: #9e9d9a;
 }
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  font-size: 5.5rem;
+  font-weight: 500;
+
+  @media (max-width: 400px) {
+    font-size: 4rem;
+  }
 }
 
 li {
