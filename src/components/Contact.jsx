@@ -1,6 +1,7 @@
 import React from "react";
 import CircleIcon from "./CircleIcon";
 import "./Contact.scss";
+import Marquee from "react-fast-marquee";
 
 const Contact = () => {
   return (
@@ -17,8 +18,18 @@ const Contact = () => {
       </div>
 
       <div className="container-2">
-      
+        <Marquee pauseOnHover gradient={false}>
+          <span>Follow us on social media</span>
+          <span>Follow us on social media</span>
+          <span>Follow us on social media</span>
+          <span>Follow us on social media</span>
+          <span>Follow us on social media</span>
+          <span>Follow us on social media</span>
+          <span>Follow us on social media</span>
+          <span>Follow us on social media</span>
+        </Marquee>
       </div>
+      
     </div>
   );
 };

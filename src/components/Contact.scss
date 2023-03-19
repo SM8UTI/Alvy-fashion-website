@@ -63,5 +63,28 @@
         white-space: nowrap;
       }
     }
+
+    &-2 {
+      margin-block: 2rem;
+      span {
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        position: relative;
+        margin-left: 4rem;
+        color: #9e9d9a;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: -2.5rem;
+          translate: 0 -50%;
+          width: 8px;
+          aspect-ratio: 1;
+          border-radius: 50%;
+          background-color: var(--bgw);
+        }
+      }
+    }
   }
 }
